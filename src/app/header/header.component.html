@@ -1,0 +1,18 @@
+<div class="">
+  <img
+    height="90px"
+    src="..//src/assets/pokeapi_256.3fa72200.png"
+    alt="PokeAPI Logo"
+  />
+  <a
+    *ngFor="let pokemon of favoritePokemons"
+    [routerLink]="['/pokemon', pokemon.name]"
+  >
+    <img
+      class="favorite-pokemons"
+      [src]="pokemon.image"
+      alt="{{ pokemon.name }}"
+      (click)="openPokemonDetails(pokemon)"
+    />
+  </a>
+</div>

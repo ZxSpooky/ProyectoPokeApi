@@ -1,0 +1,31 @@
+.pokemon-details {
+  background-color: #F2F2F2;
+  border: 2px solid #FECB00;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pokemon-name {
+  font-size: 24px;
+  color: #FF001F;
+}
+
+.pokemon-type {
+  font-size: 16px;
+  color: #357EC7;
+  margin-top: 10px;
+}
+
+.pokemon-stats-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.pokemon-stat {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}

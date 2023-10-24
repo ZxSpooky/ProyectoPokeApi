@@ -1,0 +1,19 @@
+<div>
+  <button class="btn btn-primary resumen" (click)="togglePokemonSummary()">
+    Pokemon summary
+  </button>
+
+  <div class="pokemon-summary" *ngIf="showPokemonSummary">
+    <h3>Number of pokemon that start with each letter of the alphabet.</h3>
+    <div class="alphabet-summary">
+      <ng-container *ngFor="let letter of alphabet">
+        <div class="letter">
+          | {{ letter }} =
+        </div>
+        <div class="count">
+          {{ pokemonCountByLetter[letter] || 0 }} |
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

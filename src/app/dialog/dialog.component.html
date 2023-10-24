@@ -1,0 +1,10 @@
+<div *ngIf="pokemon" class="pokemon-details">
+  <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+  <p class="pokemon-type">Type: {{ pokemon.types[0].type.name }}</p>
+  <p class="pokemon-stats-title">Stats:</p>
+  <ul class="pokemon-stats">
+    <li *ngFor="let stat of pokemon.stats" class="pokemon-stat">
+      {{ stat.stat.name }}: {{ stat.base_stat }}
+    </li>
+  </ul>
+</div>
